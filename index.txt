@@ -1,0 +1,14 @@
+intro.md
+supervised_unsupervised.md
+KNN.md
+model_evalaution.md
+descion_tree.md
+logistic_regression.md
+SVM.md
+softmax.md
+Grid_SearchCV.md
+Clustering&Kmeans.md
+important_snippets.md
+
+handling_imbalanced_and_missing_data.md
+data_processing_feature_engineering.md
