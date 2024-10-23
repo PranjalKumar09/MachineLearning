@@ -1,5 +1,5 @@
 """ 
-Wine -> Data analysis -> data pre processing -> Train test split -> random forest model 
+Wine -> Data analysis -> data pre processing -> Train test split -> random forestx   model 
                                                                               |  
                                                                               |  
                                 New dat            ---------------------> Trained random forest model -------------------> Wine quality 
