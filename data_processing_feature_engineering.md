@@ -120,3 +120,32 @@ df['std_amt_spent'] = df[bill_cols].std(axis = 1)
   - **Encoding**: Transforming categorical variables into numerical formats.
   - **Aggregating**: Summarizing data points to create features (e.g., mean, median).
   - **Temporal Features**: Extracting parts of datetime variables (e.g., year, month, day) for models that can benefit from time-related insights.
+
+
+
+
+
+
+
+
+
+### **Sample**  
+A **sample** is a single instance or example of real-world data used for analysis or training in machine learning. 
+
+**Example:**  
+- In image processing, each image is a **sample**.  
+- The **features** of the sample are the individual pixel values that represent different aspects of the image.
+
+---
+
+### **Preprocessing by Data Type**
+
+Different types of data require specific preprocessing techniques before being fed into machine learning models. Below are common data types and the preprocessing steps typically applied to each:
+
+| **Input Type**  | **Preprocessing Needed** |
+|-----------------|--------------------------|
+| **Numeric**     | **Centering & Scaling**: Numeric data is often normalized or standardized by centering (subtracting the mean) and scaling (dividing by the standard deviation) to ensure all features contribute equally to the model. |
+| **Categorical** | **Integer Encoding**: Categorical values are converted to integers representing distinct categories (e.g., 'red' → 1, 'blue' → 2). <br> **One-Hot Encoding**: Converts categorical variables into binary vectors (e.g., 'red' → [1,0], 'blue' → [0,1]). This avoids implying any ordinal relationship between categories. |
+| **Text**        | **TF-IDF (Term Frequency-Inverse Document Frequency)**: Measures the importance of a word in a document relative to a corpus, emphasizing unique terms. <br> **Embeddings**: Converts words or phrases into dense vectors in a continuous space, capturing semantic relationships (e.g., word2vec, GloVe). |
+| **Image**       | **Pixel Representation (RGB)**: Images are typically represented as a 2D matrix of pixel values for grayscale, or 3D for RGB (Red, Green, Blue) channels, where each pixel contains intensity values between 0-255. |
+| **Speech**      | **Time Series Representation**: Speech is represented as a time series of numerical values, often capturing sound waves at various time intervals. Preprocessing may involve techniques like **MFCC (Mel Frequency Cepstral Coefficients)**, which helps extract frequency-based features from audio data. |
