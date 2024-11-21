@@ -12,3 +12,13 @@ important_snippets.md
 
 handling_imbalanced_and_missing_data.md
 data_processing_feature_engineering.md
+
+
+
+
+DL~TF
+    TF_Intro.md
+    Keras.md
+    CNN.md
+    data_augmentation_and_transfer_learning_guide.md
+    TF_ImageProcessing_HyperparameterTuning.md

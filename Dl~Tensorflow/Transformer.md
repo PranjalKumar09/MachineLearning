@@ -316,3 +316,5 @@ class EncoderLayer(Layer):
 - **Process**: Multiple attention heads process the input, then combine into a single output.
 - **Advantage**: Enhances model’s ability to understand both short- and long-term dependencies.
 
+- : It computes the attention scores and weighted sum of the value
+- `def attention(self, query, key, value)`: It computes the attention scores and weighted sum of the values.

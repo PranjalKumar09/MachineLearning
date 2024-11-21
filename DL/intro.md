@@ -12,6 +12,8 @@
 
 6. **Adding Sound to Silent Videos**
 
+7. **Vehicle Autonomity** -> Lane rocgnition
+
 ---
 
 ### Neural Network Components
