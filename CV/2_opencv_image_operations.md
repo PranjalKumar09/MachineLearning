@@ -1,4 +1,4 @@
-### Enhanced and Concise Notes for Drawing Shapes, Text, and Image Manipulations with OpenCV
+### Drawing Shapes, Text, and Image Manipulations with OpenCV
 
 #### 1. **Drawing a Rectangle**
 ```python
@@ -9,8 +9,6 @@ thickness = 4
 
 cv.rectangle(blank_image, left_top_point, right_bottom_point, color, thickness=thickness)
 ```
-- **Rectangle**: Drawn from `left_top_point` to `right_bottom_point`.
-- **Color**: Cyan (`(0, 250, 250)` in BGR format).
 - **Thickness**: `4` for border thickness. Use `thickness=-1` to fill the rectangle.
 
 #### 2. **Drawing a Line**
@@ -20,9 +18,6 @@ color = (0, 250, 250)
 
 cv.line(blank_image, point1, point2, color, thickness=thickness)
 ```
-- **Line**: Drawn between `point1` and `point2`.
-- **Color**: Cyan.
-- **Thickness**: `thickness=4` (can be modified).
 
 #### 3. **Rectangle with Dynamic Size (Quarter Fill)**
 ```python
@@ -37,8 +32,6 @@ mid_point = (250, 250)
 radius = 40
 cv.circle(blank_image, mid_point, radius, color, thickness=thickness)
 ```
-- **Circle**: Centered at `mid_point` with radius `40`.
-- **Thickness**: `4` for border, use `-1` for a filled circle.
 
 #### 5. **Adding Text to an Image**
 ```python

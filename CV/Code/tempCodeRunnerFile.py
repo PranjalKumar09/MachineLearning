@@ -1,1 +1,1 @@
-rectangle
+ADAPTIVE_THRESH_GAUSSIAN_C
