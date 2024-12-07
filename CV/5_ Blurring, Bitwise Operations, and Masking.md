@@ -34,15 +34,15 @@ Blurring is a common image processing technique used to reduce noise and details
 
 #### 2. **Bitwise Operations**
 
-Bitwise operations are powerful tools for image manipulation, typically used for masking, merging, or excluding image areas.
+Typically used for masking, merging, or excluding image areas.
 
-- **Bitwise AND**: The intersection of two images or masks. The output contains only the overlapping regions.
+- **Bitwise AND**
   ```python
   bitwise_and = cv.bitwise_and(rectangle, circle)
   cv.imshow('bitwise_and', bitwise_and)
   ```
 
-- **Bitwise OR**: Combines both the non-overlapping and intersecting regions of two images or masks.
+- **Bitwise OR**
   ```python
   bitwise_or = cv.bitwise_or(rectangle, circle)
   cv.imshow('bitwise_or', bitwise_or)
@@ -87,7 +87,7 @@ You can create custom masks with any shape (circle, rectangle, or even more comp
 
 - **Circle Mask**:
   ```python
-  circle = cv.circle(blank.copy(), (img.shape[1]//2, img.shape[0]//2), 100, 255, -1)
+  circle = cv.circle(blank.copy(), (img.shape[1]//2, img.shape[0]//2), radius, 255, -1)
   cv.imshow('Mask_circle', circle)
   ```
 
@@ -110,11 +110,6 @@ You can create custom masks with any shape (circle, rectangle, or even more comp
 #### 5. **`.copy()` Explanation**
 
 The `.copy()` method is used to create a **shallow copy** of the image or mask. When working with OpenCV, it's often used to avoid modifying the original image.
-
-- **Why `.copy()` is used**: If you don't use `.copy()`, the operations you perform will modify the original image or mask in-place. This could be problematic when you need to retain the original data for further processing or comparisons.
-
-- **What happens if `.copy()` is removed**:
-  - If `.copy()` is **removed**, the subsequent operations will directly modify the original `blank` or `img` image, which could affect the expected outcome, especially when you're trying to overlay or combine multiple images or shapes.
 
 ---
 

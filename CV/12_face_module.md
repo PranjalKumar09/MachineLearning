@@ -52,3 +52,8 @@
 ---
 
 This concise breakdown covers the essentials of the code for face detection and visualization using Mediapipe's `FaceMesh` model with OpenCV.
+
+
+git log --oneline
+b6d53da
+
